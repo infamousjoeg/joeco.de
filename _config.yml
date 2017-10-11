@@ -5,50 +5,50 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
+minimal_mistakes_skin    : "air" # "contrast", "dark", "dirt", "mint", "sunrise", "default"
 
 # Site Settings
-locale                   : "en"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+locale                   : "en-US"
+title                    : "Joe Garcia, CISSP || InfamousJoeG"
+title_separator          : "|"
+name                     : "Joe Garcia, CISSP"
+description              : "A collection of all the awesome projects I have going on."
+url                      : "https://git.joeco.de"
+baseurl                  : "/infamousjoeg.github.io-dev"
+repository               : "infamousjoeg/infamousjoeg.github.io-dev"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true #, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  provider               : "facebook" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  #disqus:
+    #shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  #discourse:
+    #server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
-  commitMessage          : # "New comment."
-  filename               : # comment-{@timestamp}
-  format                 : # "yml"
-  moderation             : # true
-  path                   : # "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
-  transforms:
-    email                : # "md5"
-  generatedFields:
-    date:
-      type               : # "date"
-      options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+    https://developers.facebook.com/docs/plugins/comments
+    appid                : 505122933196910
+    num_posts            : 5 # 5 (default)
+    colorscheme          : "light" # "light" (default), "dark"
+#staticman:
+  #allowedFields          : # ['name', 'email', 'url', 'message']
+  #branch                 : # "master"
+  #commitMessage          : # "New comment."
+  #filename               : # comment-{@timestamp}
+  #format                 : # "yml"
+  #moderation             : # true
+  #path                   : # "/_data/comments/{options.slug}" (default)
+  #requiredFields         : # ['name', 'email', 'message']
+  #transforms:
+    #email                : # "md5"
+  #generatedFields:
+    #date:
+      #type               : # "date"
+      #options:
+        #format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey                : "6LdG_TMUAAAAAKoseHgLtBV-vaLzm-WCxo6mNF-b"
+  secret                 : "k38RmhcxH30CUg1JCfRPd+qfw8EgiIvWnr/KsE4dEcqDdNIDMR3afqqpUAKpo8pbNK2/n7HZiJLmedAgdALLItEjRQonx4ZYMz8FxU8BJ5lYrfXjVbYws/XjQJ8pWkybNiWGVwHtIEfZHFNsuDOGsjkvPNrl1XYa9QSxDEwD+dY="
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
@@ -61,18 +61,24 @@ naver-site-verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "Joe_Garcia"
 facebook:
-  username               :
+  username               : "JoeGarcia.FL"
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : /assets/images/apple-icon-precomposed.png
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person"
+  name                   : "Joe Garcia, CISSP"
+  links:
+    - "https://twitter.com/Joe_Garcia"
+    - "https://facebook.com/JoeGarcia.FL"
+    - "https://instagram.com/infamousjoeg"
+    - "https://www.linkedin.com/in/JoeGarciaFL"
+    - "https://github.com/infamousjoeg?tab=repositories"
+    - "https://hub.docker.com/r/nfmsjoeg"
 
 # Analytics
 analytics:

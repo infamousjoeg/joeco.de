@@ -20,32 +20,32 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 breadcrumbs              : true #, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "facebook" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   #disqus:
     #shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   #discourse:
     #server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    "https://developers.facebook.com/docs/plugins/comments"
-    appid                : 505122933196910
-    num_posts            : 5 # 5 (default)
-    colorscheme          : "light" # "light" (default), "dark"
-#staticman:
-  #allowedFields          : # ['name', 'email', 'url', 'message']
-  #branch                 : # "master"
-  #commitMessage          : # "New comment."
-  #filename               : # comment-{@timestamp}
-  #format                 : # "yml"
-  #moderation             : # true
-  #path                   : # "/_data/comments/{options.slug}" (default)
-  #requiredFields         : # ['name', 'email', 'message']
-  #transforms:
-    #email                : # "md5"
-  #generatedFields:
-    #date:
-      #type               : # "date"
-      #options:
-        #format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+  #facebook:
+    #https://developers.facebook.com/docs/plugins/comments
+    #appid                : 505122933196910
+    #num_posts            : 5 # 5 (default)
+    #•colorscheme          : "light" # "light" (default), "dark"
+staticman:
+  allowedFields          : ['name', 'message']
+  branch                 : "master"
+  commitMessage          : "New comment."
+  filename               : "comment-{@timestamp}"
+  format                 : "yml"
+  moderation             : true
+  path                   : "/_data/comments/{options.slug}" # (default)
+  requiredFields         : ['name', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "timestamp-seconds" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
   siteKey                : "6LdG_TMUAAAAAKoseHgLtBV-vaLzm-WCxo6mNF-b"
   secret                 : "k38RmhcxH30CUg1JCfRPd+qfw8EgiIvWnr/KsE4dEcqDdNIDMR3afqqpUAKpo8pbNK2/n7HZiJLmedAgdALLItEjRQonx4ZYMz8FxU8BJ5lYrfXjVbYws/XjQJ8pWkybNiWGVwHtIEfZHFNsuDOGsjkvPNrl1XYa9QSxDEwD+dY="
@@ -66,7 +66,7 @@ facebook:
   username               : "JoeGarcia.FL"
   app_id                 :
   publisher              :
-og_image                 : /assets/images/apple-icon-precomposed.png
+og_image                 : "/assets/images/apple-icon-precomposed.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -89,35 +89,35 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
-  bitbucket        :
+  name             : "Joe Garcia, CISSP"
+  avatar           : "/assets/images/apple-icon-precomposed.png"
+  bio              : "Automation Guru, Gaming Casual"
+  location         : "FL"
+  email            : "joe@joe-garcia.com"
+  uri              : "https://git.joeco.de"
+  bitbucket        : 
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "https://facebook.com/JoeGarcia.FL"
   foursquare       :
-  github           :
+  github           : "https://github.com/infamousjoeg"
   gitlab           :
   google_plus      :
-  keybase          :
-  instagram        :
+  keybase          : "https://keybase.io/infamousjoeg"
+  instagram        : "https://instagram.com/infamousjoeg"
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "JoeGarciaFL"
   pinterest        :
-  soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
+  soundcloud       : "https://soundcloud.com/infamousjoeg"
+  stackoverflow    : "8761575/infamousjoeg" # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  steam            : "infamousjoeg" # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          :
+  twitter          : "https://twitter.com/Joe_Garcia"
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : "https://youtube.com/InfamousJoeG" # "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files

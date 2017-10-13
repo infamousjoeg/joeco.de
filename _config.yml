@@ -20,7 +20,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 breadcrumbs              : true #, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   #disqus:
     #shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   #discourse:
@@ -30,22 +30,22 @@ comments:
     #appid                : 505122933196910
     #num_posts            : 5 # 5 (default)
     #•colorscheme          : "light" # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'message']
-  branch                 : "master"
-  commitMessage          : "New comment."
-  filename               : "comment-{@timestamp}"
-  format                 : "yml"
-  moderation             : true
-  path                   : "/_data/comments/{options.slug}" # (default)
-  requiredFields         : ['name', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "timestamp-seconds" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+#staticman:
+  #allowedFields          : ['name', 'message']
+  #branch                 : "master"
+  #commitMessage          : "New comment."
+  #filename               : "comment-{@timestamp}"
+  #format                 : "yml"
+  #moderation             : true
+  #path                   : "/_data/comments/{options.slug}" # (default)
+  #requiredFields         : ['name', 'message']
+  #transforms:
+    #email                : "md5"
+  #generatedFields:
+    #date:
+      #type               : "date"
+      #options:
+        #format           : "timestamp-seconds" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
   siteKey                : "6LdG_TMUAAAAAKoseHgLtBV-vaLzm-WCxo6mNF-b"
   secret                 : "k38RmhcxH30CUg1JCfRPd+qfw8EgiIvWnr/KsE4dEcqDdNIDMR3afqqpUAKpo8pbNK2/n7HZiJLmedAgdALLItEjRQonx4ZYMz8FxU8BJ5lYrfXjVbYws/XjQJ8pWkybNiWGVwHtIEfZHFNsuDOGsjkvPNrl1XYa9QSxDEwD+dY="

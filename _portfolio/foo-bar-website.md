@@ -2,8 +2,8 @@
 title: "Foo Bar Identity"
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications"
 header:
-  image: "/docs/assets/images/foo-bar-identity.jpg"
-  teaser: "/docs/assets/images/foo-bar-identity-th.jpg"
+  image: "https://mmistakes.github.io/minimal-mistakes/assets/images/foo-bar-identity.jpg"
+  teaser: "https://mmistakes.github.io/minimal-mistakes/assets/images/foo-bar-identity-th.jpg"
 sidebar:
   - title: "Role"
     image: "http://placehold.it/350x250"
@@ -12,14 +12,14 @@ sidebar:
   - title: "Responsibilities"
     text: "Reuters try PR stupid commenters should isn't a business model"
 gallery:
-  - url: "/docs/assets/images/unsplash-gallery-image-1.jpg"
-    image_path: "/docs/assets/images/unsplash-gallery-image-1-th.jpg"
+  - url: "https://mmistakes.github.io/minimal-mistakes/assets/images/unsplash-gallery-image-1.jpg"
+    image_path: "https://mmistakes.github.io/minimal-mistakes/assets/images/unsplash-gallery-image-1-th.jpg"
     alt: "Placeholder Image"
-  - url: "/docs/assets/images/unsplash-gallery-image-2.jpg"
-    image_path: "/docs/assets/images/unsplash-gallery-image-2-th.jpg"
+  - url: "https://mmistakes.github.io/minimal-mistakes/assets/images/unsplash-gallery-image-2.jpg"
+    image_path: "https://mmistakes.github.io/minimal-mistakes/assets/images/unsplash-gallery-image-2-th.jpg"
     alt: "Placeholder Image"
-  - url: "/docs/assets/images/unsplash-gallery-image-3.jpg"
-    image_path: "/docs/assets/images/unsplash-gallery-image-3-th.jpg"
+  - url: "https://mmistakes.github.io/minimal-mistakes/assets/images/unsplash-gallery-image-3.jpg"
+    image_path: "https://mmistakes.github.io/minimal-mistakes/assets/images/unsplash-gallery-image-3-th.jpg"
     alt: "Placeholder Image"
 ---
 

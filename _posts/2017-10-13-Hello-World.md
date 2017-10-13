@@ -1,6 +1,11 @@
 ---
-layout: post
 title: Hello World!
+categories: Test
+tags:
+  test
+  markdown
+  hello-world
+  post
 ---
 
 # Hello World!

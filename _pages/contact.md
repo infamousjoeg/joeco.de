@@ -5,11 +5,11 @@ title: "Hit Joe Up"
 
 <form id="cntctfrm" method="POST">
     <div class="input group margin-bottom-sm">
-        <span class="input-group-addon"><i class="fa fa-user-circle-o fa-fw"></i></span>
+        #<span class="input-group-addon"><i class="fa fa-user-circle-o fa-fw"></i></span>
         <input class="form-control" type="text" name="name" placeholder="Your Name">
     </div>
     <div class="input group margin-bottom-sm">
-        <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+        #<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
         <input class="form-control" type="email" name="_replyto" placeholder="you@example.com">
     </div>
     <textarea name="message" placeholder="Message"></textarea>

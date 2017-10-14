@@ -51,6 +51,12 @@ feature_row4:
     btn_class: "btn--primary"
 ---
 
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
+
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}

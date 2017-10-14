@@ -2,6 +2,8 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Repositories"
+    url: "https://github.com/infamousjoeg?tab=repositories"
   - title: "Post Archives"
     url: /year-archive/
   - title: "Contact"

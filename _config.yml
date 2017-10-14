@@ -15,7 +15,7 @@ name                     : &name "Joe Garcia, CISSP"
 description              : &description "A collection of all the awesome projects I have going on."
 url                      : "https://joeco.de"
 baseurl                  : #"/infamousjoeg.github.io-dev"
-repository               : "infamousjoeg/infamousjoeg.github.io-dev"
+repository               : "infamousjoeg/joeco.de"
 teaser                   : "/assets/images/teaser-filler-500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true #, false (default)
 words_per_minute         : 200

@@ -14,6 +14,8 @@ tags:
   - github-pages
   - markdown
 ---
+![My Journey to Jekyll](https://jekyllrb.com/img/logo-2x.png)
+
 About a week ago or so, I started searching around for a way for me to publicize thoughts, ideas, and cool things I encounter daily.  I had quite a few requirements for my new website:
 
 * It should cost nothing.

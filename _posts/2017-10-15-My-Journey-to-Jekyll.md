@@ -3,8 +3,8 @@ published: true
 title: My Journey to Jekyll
 excerpt_separator: <!--more-->
 categories:
-  - Web Design
-  - Tutorials
+  - web-design
+  - tutorials
 tags:
   - jekyll
   - github

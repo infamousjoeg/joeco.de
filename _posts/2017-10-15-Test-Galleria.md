@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Test Galleria
 tags: 'JavaScript, jQuery, Responsive, Galleria'
 categories: Test

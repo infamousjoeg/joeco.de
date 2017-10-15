@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: My Journey to Jekyll
 header:
   image: 'https://jekyllrb.com/img/logo-2x.png'

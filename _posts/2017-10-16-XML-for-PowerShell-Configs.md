@@ -1,9 +1,9 @@
 ---
 title: XML for PowerShell Configs
 header:
-  teaser: /assets/images/powershell.jpg
-  thumbnail: /assets/images/powershell.jpg
-excerpt_separator: <!--more-->
+  teaser: "https://joeco.de/assets/images/powershell.jpg"
+  thumbnail: "https://joeco.de/assets/images/powershell.jpg"
+excerpt_separator: "<!--more-->"
 categories:
   - Coding
   - PowerShell
@@ -13,7 +13,7 @@ tags:
   - example-code
 ---
 
-{% raw %}![XML for PowerShell Configs]({{ site.url }}{{ site.baseurl }}/assets/images/powershell.jpg){% endraw %}
+{% raw %}![XML for PowerShell Configs](https://joeco.de/assets/images/powershell.jpg){% endraw %}
 
 I've really taken a liking recently to using XML files for storing configuration values for my PowerShell scripts.  Most times, I do it to make it a "one-stop shop" for updating config values.
 <!--more-->

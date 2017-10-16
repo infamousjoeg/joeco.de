@@ -1,24 +1,23 @@
 ---
-published: false
+published: true
 title: My Journey to Jekyll
-header:
-  image: 'https://jekyllrb.com/img/logo-2x.png'
 excerpt_separator: <!--more-->
 categories:
-  - Tutorials
-  - Web Design
-  - Uncategorized
+  - web-design
+  - tutorials
 tags:
   - jekyll
   - github
   - github-pages
   - markdown
 ---
+![My Journey to Jekyll](https://jekyllrb.com/img/logo-2x.png)
+
 About a week ago or so, I started searching around for a way for me to publicize thoughts, ideas, and cool things I encounter daily.  I had quite a few requirements for my new website:
 
 * It should cost nothing.
 * It should have a small footprint.
- * _Containerized, hosted for free, whatever..._
+  * _Containerized, hosted for free, whatever..._
 * It shouldn't rely on a database.
 
 Three requirements... and no idea where to start.  Wordpress has failed me in the past, Joomla is out of the question, and CMS as a whole just isn't as appealing to me anymore.  Plus, mosted of the hosted sites are insecure themselves and are typically breached.

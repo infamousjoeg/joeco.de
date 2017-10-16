@@ -2,8 +2,14 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Repositories"
+    url: "https://github.com/infamousjoeg?tab=repositories"
+  - title: "Gists"
+    url: "https://gist.github.com/infamousjoeg"
   - title: "Post Archives"
     url: /year-archive/
+  - title: "CyberArk REST API"
+    url: "https://cybr.rocks/RESTAPIv99"
   - title: "Contact"
     url: /contact/
   - title: "Sitemap"

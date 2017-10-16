@@ -15,7 +15,7 @@ name                     : &name "Joe Garcia, CISSP"
 description              : &description "A collection of all the awesome projects I have going on."
 url                      : "https://joeco.de"
 baseurl                  : #"/infamousjoeg.github.io-dev"
-repository               : "infamousjoeg/infamousjoeg.github.io-dev"
+repository               : "infamousjoeg/joeco.de"
 teaser                   : "/assets/images/teaser-filler-500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true #, false (default)
 words_per_minute         : 200
@@ -82,9 +82,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-108154835-1"
 
 
 # Site Author
@@ -187,7 +187,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: #America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)

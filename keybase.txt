@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/infamousjoeg
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://joeco.de
+  * I am infamousjoeg (https://keybase.io/infamousjoeg) on keybase.
+  * I have a public key with fingerprint 83ED A9F5 BA82 448F 2B2F  5968 3C14 F0A8 3790 ED19
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012051f4a847a32bb17842bf1009c925bc9c272e6a44f7acd2a9c96c6700938a5e320a",
+      "fingerprint": "83eda9f5ba82448f2b2f59683c14f0a83790ed19",
+      "host": "keybase.io",
+      "key_id": "3c14f0a83790ed19",
+      "kid": "0101f25c97aac5e1f4b6419be0740d86cffe42f088492b5cb97aa0b11e9c619f8c960a",
+      "uid": "becbb67cb0020f1c34082f1e026df919",
+      "username": "infamousjoeg"
+    },
+    "service": {
+      "hostname": "joeco.de",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1508706736,
+  "expire_in": 157680000,
+  "prev": "35c786186acbb16ebcce96938ae4e1a27ff565105176ee325e70ec6df43c7730",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMN0AnicbVJ/UBRlGAYMESjSIoQJFBcMs4t29/bnER2HIAXaVCR5ZZy73357t/y4
+Pe/2ziOFYgzBJhvDGIMgZCKmmYqCBMtG5VBhlEQ0ZGDmMhkUUuNXIZNl2i6j//X9
+8833vs/zvO/zvt/JhxYFhAU+GznzBb1vMiawz/exO8A8GfrtDoSXhRLEsAMphAsX
+LBKgS7EUSgJiQFAMR0lMJDiGoDk9zvMYzRA4L2IoygIWJ3nAApzGIcURhEhzQMA5
+NU4BilYBeoYjoR5HOUSHiJLdCp0Op2RXVFlGDwWOFUmeY3CCYEScx0WSpRg9wAgR
+5Rg9zaJQwFiVaJNdGkNtjudcMFmS1Zj6sCy09z/4+32jmIiTgKU5DpBQdcBTBMby
+EKUJVGAoIIqQwEWUYQgW50nAa0CUxzDIAgpjRUY1sdC3e0GOh4DnKRrwKIqjIgb0
+BMrgIgZRnBJEdqGu2wWddq4YqmjJLnLFsttVIEMrUqpD1IxHAlAbrubmHkrNAjlZ
+gCrX4ZQVGchFatSmKA6XQWMpJQ4Nth3ylnsCFl6yC+ocVYYHOl2SbEcMmIoEiqQp
+YiTK0ChF6ykdAr0OyQktkoYgaYpB1aPVgR5taiSgGQpjKE51hVGQBwCylLYuSECM
+w2lRJCkSUxdPU1BdIAlpFALVKaEHNK1HEc3SNruMGHBVVOGsqqZLsto5xe2ESGm3
+b8sDAYFhAYuDg7QPFhAWuvT+t4t4+uE7Sf18V9D8bdu7uZdHnLbmyLDJmcblm7Yf
+vpDnrc63Xr15vdn6yH7jRHZc6GN7U04450787Hktkl9pfG5X7ZN3OykgtSmh2T+s
+q41yTP1oGlKGehpbvZVf161cNljjLew/venLuEOPxve9E1w3u4Lt/G6813ejMTEz
+e8PKf5e2++NhU8pLf49yyIFwMJ9ReNnWsv9Xf31bQn3HSNqbBXLSkRdmcvrmR6P3
+oMOmUnJDb3d496WtryYcMUTj+vJnnsoLWdXeBbLmceMHI1fTK6qqWuU1SuInEfBg
+mWPdZn9OTlMak7Bs7foba1abw/6yzBwNbxo1nn5lyRvC2aGNJzt/TztY9uG5zTFP
+XEtqr0j448XUAyG+/lOHc3Oni/CJ5ozyK9NAV02O+Ys+r3070vTN7sS1t655avZu
+a625+JVuorz1zst+2/QxjzekcmpXdESUSaj4Z9T40c1+8Mtg+lHb1vfjhs+trq+8
+aw0qt2aV2R6MSBwfuHIM3TcQ2+WeGozemKoz9+vnlpiEmoyG79Ofd8X4Frd1yHtm
+kBXmqrxVpuHW+NKuiZ6Osfc6c2Mv/WZOsfzUN9/56VjFeQM4Hp9n7r0V8vrx8UVG
+81uZs7P5y7eMhUbFpn12duf667t3Zp4qjr3wuC9xzpAfMpeTlZzaU1iSZWwaaGg5
+dN7VUMBfvF13Jtgvn/H+2VL9HzcKwbg=
+=l/ls
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/infamousjoeg
+
+==================================================================

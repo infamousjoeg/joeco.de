@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Happy Thanksgiving!
 header:
   teaser: "https://i.pinimg.com/236x/27/ed/4c/27ed4c0b74066c8bb0ab8b5bfb2afe88--geek-humor-computer-science.jpg"

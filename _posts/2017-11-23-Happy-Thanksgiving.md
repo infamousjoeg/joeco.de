@@ -19,4 +19,4 @@ If you're anything like me, your code is "compiling" over Thanksgiving so you ca
 
 Have a great one and try to eat as much turkey as possible!
 
-{% raw %}[Joe Garcia](https://joeco.de/assets/images/apple-icon-precomposed.png){% endraw %}
+{% raw %}[Joe Garcia](https://joeco.de/assets/images/apple-icon-precomposed.png){% endraw %} Joe Garcia

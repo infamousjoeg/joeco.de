@@ -8,4 +8,6 @@ excerpt: "Automation Guru && Gaming Casual"
     #alt:
 ---
 
-This will be a page totally dedicated to making me seem super awesome.  I guess I could be... but I'll let you be the judge.
+I am into everything automation.  Mainly focusing on DevOps at this time since it's such a new idea to so many.
+
+I am into everything gaming, too.  Only, not Sony because they don't cater to their gaming fanbase lately.

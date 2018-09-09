@@ -1,7 +1,6 @@
 backend:
   name: git-gateway
   branch: gh-pages # Branch to update (optional; defaults to master)
-  site-domain: joeco.de
 
 publish_mode: editorial_workflow
 
@@ -14,10 +13,10 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
-      - {label: "Categories", name: "categories", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: true}
+      - {label: "Categories", name: "categories", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
     meta:
       - {label: "Publish Date", name: "date", widget: "datetime"}
 

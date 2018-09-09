@@ -5,8 +5,6 @@ thumbnail: /assets/images/teaser-filler-500x300.png
 categories: test-category-again
 excerpt_seperator: <!--more-->
 ---
-![](/assets/images/teaser-filler-500x300.png)
-
 Christian McCaffrey (RB, CAR) just scored for the Carolina Panthers on NFL RedZone.
 
 > He's so fast!

@@ -11,17 +11,13 @@ collections:
   - name: "post"
     label: "Post"
     folder: "_posts"
-    sort: "date:desc"
-    format: "yaml-frontmatter"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: true}
-      - {label: "Excerpt Seperator", name: "excerpt_seperator", widget: "hidden", default: "<!--more-->"}
     meta:
       - {label: "Publish Date", name: "date", widget: "datetime"}
 
@@ -34,13 +30,4 @@ collections:
       - {label: "Layout", name: "layout", widget: "select", options: ["404", "about", "contact", "sitemap", "year-archive"]}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Permalink", name: "permalink", widget: "hidden", default: "//"}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
-
-  - name: "layouts"
-    label: "Layouts"
-    folder: "_layouts"
-    extension: "html"
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
-      - {label: "Title", name: "title", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}

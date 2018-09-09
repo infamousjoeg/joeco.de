@@ -20,7 +20,7 @@ collections:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
-      - {label: "Tags", name: "tags", widget: "list", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: true}
       - {label: "Excerpt Seperator", name: "excerpt_seperator", widget: "hidden", default: "<!--more-->"}
     meta:

@@ -18,6 +18,8 @@ Finally, to the use case: upon a defined Instance's _Instance State_ changing to
 
 # 🤖 My Engineered Solution
 
+* First and foremost, it should be open sourced on GitHub.
+  * <https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda>
 * Language should be [Python](https://www.python.org/). _(My most comfortable language currently.)_
 * Any custom functions should be put in a [Python module package](https://docs.python.org/2/tutorial/modules.html) format for easy distribution later.
 * The AWS Lambda function's [execution role](https://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html#lambda-intro-execution-role) should have the following permissions:
@@ -68,8 +70,22 @@ The second bullet point in my decomposition is to browse to Cloudflare, while my
 
 **✅ Step #3: Update A Record in Cloudflare DNS via REST API**
 
-Finally, the meat 🥩 and potatoes 🥔 of the function.
+Finally, the meat 🥩 and potatoes 🥔 of the function!
 
-# TL;DR
+I created [cloudflare.py](https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda/blob/master/cloudflare.py) as a means to creating and testing this function released in [pkg/func.py](https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda/blob/master/pkg/func.py#L8).  I decided to keep it because it's a great example of how to interact with Cloudflare's REST API using Python in a raw manner.
 
-Here's a link straight to the project on GitHub: <https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda>
+Back to the function, though.  It authenticates with the provided Cloudflare e-mail address and API key.  After confirmation of successful authentication, it then updates the A record associated with the A record name provided via DNS ID in the domain managed in Cloudflare associated with the provided Zone ID.
+
+# 🌎 Where Is It?
+
+I released my AWS Lambda function under [main.py](https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda/blob/master/main.py).  It invokes  `main.handler` on trigger action -- therefore, you'll find in [main.py](https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda/blob/master/main.py) a defined handler function that contains the actions to take.
+
+You can use the exported [AWS SAM template](https://docs.aws.amazon.com/lambda/latest/dg/serverless_app.html) to orchestrate setting up your AWS Lambda function using the same Python script.  Just don't forget to populate values into your Environment Variables before enabling the CloudWatch Event trigger!
+
+## 📦 Release
+
+You may download the latest release from the [GitHub project page](https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda/releases).
+
+# 😴 TL;DR
+
+Here's a link straight to the project on [GitHub](https://github.com): <https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda>

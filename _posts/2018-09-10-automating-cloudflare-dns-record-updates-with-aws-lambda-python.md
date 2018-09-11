@@ -24,11 +24,13 @@ Finally, to the use case: upon Instance State changing to "Running", grab the In
   * CloudWatch Logs
   * SNS (_Publish_)
   * EC2 (_EC2ReadOnlyAccess_ IAM Role)
-* The Instance State change should be a CloudWatch Event trigger in the AWS Lambda function.
-* The AWS Lambda should be universally adoptable.  It should make the following variables available to the function as Environment Variables:
+* The Instance State change should be a CloudWatch Event trigger in the function.
+* The function should be universally adoptable.  It should make the following variables available to the Python script as Environment Variables:
   * `EC2_INSTANCE_NAME`
   * `CLOUDFLARE_EMAIL`
   * `CLOUDFLARE_API_KEY`
   * `CLOUDFLARE_A_NAME`
   * `CLOUDFLARE_DNS_ID`
   * `CLOUDFLARE_ZONE_ID`
+* The function should use the AWS SDK to describe the EC2 instance provided and retrieve the public IPv4 address assigned.
+* The function should use Cloudflare's RESTful API to update the specified A record in the DNS & Zone given using the E-Mail and API Key provided for authentication to do so.

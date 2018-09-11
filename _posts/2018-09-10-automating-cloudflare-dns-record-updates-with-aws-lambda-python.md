@@ -1,6 +1,8 @@
 ---
 title: Automating Cloudflare DNS Record Updates with AWS Lambda & Python
-thumbnail: /assets/images/cdemoupdatecloudflare-screenshot.png
+header:
+  teaser: /assets/images/cdemoupdatecloudflare-screenshot.png
+  thumbnail: /assets/images/cdemoupdatecloudflare-screenshot.png
 category: Serverless
 tags: 'aws, aws-lambda, python, cloudflare, dns, rest-api'
 ---

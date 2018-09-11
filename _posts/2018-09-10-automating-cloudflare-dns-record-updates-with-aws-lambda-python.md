@@ -69,3 +69,7 @@ The second bullet point in my decomposition is to browse to Cloudflare, while my
 **✅ Step #3: Update A Record in Cloudflare DNS via REST API**
 
 Finally, the meat 🥩 and potatoes 🥔 of the function.
+
+# TL;DR
+
+Here's a link straight to the project on GitHub: <https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda>

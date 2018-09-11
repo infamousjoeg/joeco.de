@@ -6,7 +6,7 @@ tags: 'aws, aws-lambda, python, cloudflare, dns, rest-api'
 ---
 ![AWS Lambda Function](/assets/images/cdemoupdatecloudflare-screenshot.png)
 
-# Use Case Explanation
+# 📢 Use Case Explanation
 
 I like to use a very specific domain name when I demo [CyberArk Conjur](https://conjur.org) because it's easier for me to remember and it also looks better to the customer.  Even so, if it doesn't look good to them -- it still looks better to me!
 
@@ -16,7 +16,7 @@ Now, I'm sure I could just use an [Elastic IP](https://docs.aws.amazon.com/AWSEC
 
 Finally, to the use case: upon a defined Instance's _Instance State_ changing to "Running", grab the defined Instance's public IPv4 address and update a defined [A record](https://support.dnsimple.com/articles/a-record/) in Cloudflare's DNS.  
 
-# My Engineered Solution
+# 🤖 My Engineered Solution
 
 * Language should be [Python](https://www.python.org/). _(My most comfortable language currently.)_
 * Any custom functions should be put in a [Python module package](https://docs.python.org/2/tutorial/modules.html) format for easy distribution later.
@@ -35,15 +35,15 @@ Finally, to the use case: upon a defined Instance's _Instance State_ changing to
 * The function should use the [AWS SDK](https://aws.amazon.com/sdk-for-python/) to describe the EC2 instance provided and retrieve the public IPv4 address assigned.
 * The function should use [Cloudflare's RESTful API](https://api.cloudflare.com/) to update the specified A record in the DNS & Zone given using the E-Mail and API Key provided for authentication to do so.  Updating it to the previously retrieved public IPv4 address.
 
-# How I Did It
+# ⁉️ How I Did It
 
-## Decomposition
+## 🧟‍ Decomposition
 
 Coming into this phase, I already knew I was doing something that took _way_ too long and  _way_ too many times repeatedly.  Immediately, that triggered my "Automation Senses" -- like Spidey Senses... but less cool... and not surprisingly dorkier.
 
-Easily repeatable processes are the **GOLDEN RULE** when it comes to easy automation.  All that was left was decomposing that easily repeatable process:
+Easily repeatable processes are the 🏅 **GOLDEN RULE 🏅** when it comes to easy automation.  All that was left was decomposing that easily repeatable process:
 
-**My Easily Repeatable Process**
+**🔁 My Easily Repeatable Process**
 
 * When I start an AWS EC2 Instance, I do the following:
   * Copy the EC2 Instance's public IPv4 address to my clipboard.
@@ -52,20 +52,20 @@ Easily repeatable processes are the **GOLDEN RULE** when it comes to easy automa
   * Select `cybr.rocks` from the list of domains managed.
   * Select the IP address value of the A record named `cdemo.cybr.rocks` and update it with the public IPv4 address on my clipboard.
 
-## "Step" Development
+## 👟 "Step" Development
 
 I made a name for this development method because I don't really know what it's called.  However, it's a process to development I found to be profoundly effective in a majority of my situations.  Those being where I'm a solo developer, tester, and releaser all wrapped into one.
 
 The idea behind Step Development is rather easy -- take your decomposed "easily repeatable process" and script it one bullet point at a time.  Testing it one bullet point at a time.  While also, essentially, releasing it one bullet point at a time.
 
-**Step #1: Get the EC2 Instance's Public IPv4 Address**
+**✅ Step #1: Get the EC2 Instance's Public IPv4 Address**
 
 The first bullet point in my decomposition is to grab the running EC2 instance's public IPv4 address once it is assigned fresh off a new run state.  I created and tested the function released in [pkg/func.py](https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda/blob/master/pkg/func.py#L8) in my Terminal within MacOS.
 
-**Step #2: Authenticate to Cloudflare**
+**✅ Step #2: Authenticate to Cloudflare**
 
 The second bullet point in my decomposition is to browse to Cloudflare, while my third is to login to Cloudflare.  Since this is automation, we'll kill two birds with one stone over the REST API.  Better yet, after investigating the [Cloudflare REST API Documentation](https://api.cloudflare.com/), it looks like we can authenticate _while_ also updating the A record.  SCORE!  Nothing to do this step!
 
-**Step #3: Update A Record in Cloudflare DNS via REST API**
+**✅ Step #3: Update A Record in Cloudflare DNS via REST API**
 
-****
+Finally, the meat 🥩 and potatoes 🥔 of the function.

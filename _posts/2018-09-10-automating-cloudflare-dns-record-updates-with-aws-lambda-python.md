@@ -3,7 +3,9 @@ title: Automating Cloudflare DNS Record Updates with AWS Lambda & Python
 category: Serverless
 tags: 'aws, aws-lambda, python, cloudflare, dns, rest-api'
 ---
-![AWS Lambda Function](/assets/images/cdemoupdatecloudflare-screenshot.png)
+# ⚙️ AWS EC2 to Cloudflare Lambda Function
+
+![AWS Lambda Function](https://joeco.de/assets/images/cdemoupdatecloudflare-screenshot.png)
 
 # 📢 Use Case Explanation
 
@@ -11,7 +13,7 @@ I like to use a very specific domain name when I demo [CyberArk Conjur](https://
 
 I noticed quickly that when I'd set the public IPv4 address of my [AWS](https://aws.amazon.com) [EC2](https://aws.amazon.com/ec2/) instance that I demo from to an A record for `cdemo.cybr.rocks` in [Cloudflare](https://cloudflare.com)'s DNS, it'd be good for that Instance running.  However, after I stopped the EC2 instance and, eventually, restarted it again, it boots with a different public IPv4 address.
 
-Now, I'm sure I could just use an [Elastic IP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) and assign it and call it a day... but that costs money.  I can save money, even over the Elastic IP lease, triggering the [AWS Lambda](https://aws.amazon.com/lambda/) function only when my _Instance State_ changes.
+Now, I'm sure I could just use an [Elastic IP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) and assign it and call it a day... but that costs money -- even when it's not being used!  I can save money, even over the Elastic IP lease, triggering the [AWS Lambda](https://aws.amazon.com/lambda/) function only when my _Instance State_ changes.
 
 Finally, to the use case: upon a defined Instance's _Instance State_ changing to "Running", grab the defined Instance's public IPv4 address and update a defined [A record](https://support.dnsimple.com/articles/a-record/) in Cloudflare's DNS.  
 
@@ -19,7 +21,7 @@ Finally, to the use case: upon a defined Instance's _Instance State_ changing to
 
 * First and foremost, it should be open sourced on GitHub.
   * <https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda>
-* Language should be [Python](https://www.python.org/). _(My most comfortable language currently.)_
+  * Language should be [Python](https://www.python.org/). _(My most comfortable language currently.)_
 * Any custom functions should be put in a [Python module package](https://docs.python.org/2/tutorial/modules.html) format for easy distribution later.
 * The AWS Lambda function's [execution role](https://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html#lambda-intro-execution-role) should have the following permissions:
   * [CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
@@ -52,7 +54,7 @@ Easily repeatable processes are the 🏅 **GOLDEN RULE 🏅** when it comes to e
   * Login to my Cloudflare account.
   * Select `cybr.rocks` from the list of domains managed.
   * Select the IP address value of the A record named `cdemo.cybr.rocks` and update it with the public IPv4 address on my clipboard.
-
+  
 ## 👟 "Step" Development
 
 I made a name for this development method because I don't really know what it's called.  However, it's a process to development I found to be profoundly effective in a majority of my situations.  Those being where I'm a solo developer, tester, and releaser all wrapped into one.
@@ -65,7 +67,9 @@ The first bullet point in my decomposition is to grab the running EC2 instance's
 
 **✅ Step #2: Authenticate to Cloudflare**
 
-The second bullet point in my decomposition is to browse to Cloudflare, while my third is to login to Cloudflare.  Since this is automation, we'll kill two birds with one stone over the REST API.  Better yet, after investigating the [Cloudflare REST API Documentation](https://api.cloudflare.com/), it looks like we can authenticate _while_ also updating the A record.  SCORE!  Nothing to do this step!
+The second bullet point in my decomposition is to browse to Cloudflare, while my third is to login to Cloudflare.  Since this is automation, we'll kill two birds with one stone over the REST API.  Better yet, after investigating the [Cloudflare REST API Documentation](https://api.cloudflare.com/), it looks like we can authenticate _while_ also updating the A record.  
+
+SCORE!  Nothing to do this step!
 
 **✅ Step #3: Update A Record in Cloudflare DNS via REST API**
 
@@ -81,10 +85,20 @@ I released my AWS Lambda function under [main.py](https://github.com/infamousjoe
 
 You can use the exported [AWS SAM template](https://docs.aws.amazon.com/lambda/latest/dg/serverless_app.html) to orchestrate setting up your AWS Lambda function using the same Python script.  Just don't forget to populate values into your Environment Variables before enabling the CloudWatch Event trigger!
 
+![How to Deploy SAM Template](https://github.com/infamousjoeg/joeco.de/blob/gh-pages/assets/images/Messages%20Image(2549426905).png?raw=true)
+
+![CloudFormation Success Screenshot](https://github.com/infamousjoeg/joeco.de/blob/gh-pages/assets/images/Messages%20Image(3292846589).png?raw=true)
+
+![Lambda Function Created Automatically](https://github.com/infamousjoeg/joeco.de/blob/gh-pages/assets/images/Messages%20Image(2459700380).png?raw=true)
+
 ## 📦 Release
 
-You may download the latest release from the [GitHub project page](https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda/releases).
+You may download the latest SAM template release from the [GitHub project page](https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda/releases).
 
 # 😴 TL;DR
 
 Here's a link straight to the project on [GitHub](https://github.com): <https://github.com/infamousjoeg/aws-ec2-cloudflare-lambda>
+
+# 🎫 License
+
+MIT

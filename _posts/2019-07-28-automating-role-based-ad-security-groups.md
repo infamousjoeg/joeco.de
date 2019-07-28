@@ -4,6 +4,8 @@ thumbnail: /assets/images/automate-adsg.png
 category: automation
 tags: 'powershell, active-directory, security-groups'
 ---
+![](https://github.com/infamousjoeg/joeco.de/blob/gh-pages/assets/images/automate-adsg.png?raw=true)
+
 When I create a new Safe in CyberArk PAS, I always create three (3) role-based security groups in Active Directory that segregates the duties I need in each safe.  I create an Admin security group, Auditors security group, and Users security group - each with different permissions.
 
 Creating these security groups in Active Directory can take some time.  Also, it's an easily repeatable process - so, it's a good candidate for some AUTOMATION!
